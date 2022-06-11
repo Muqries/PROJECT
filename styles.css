@@ -1,0 +1,111 @@
+
+
+* { padding: 0%; margin: 0%;font-family: Digimon;max-width: 1260;}
+
+
+#navigation {
+ float: left;
+ width: 1250px;
+ color: #333;
+ padding: 10px;
+ margin: 0px 0px 0px 0px;
+ background-color:#000000;
+ 
+}
+
+#content { 
+ float: left;
+ color: #333;
+ background-image: url("Digimon Wallpaper.gif");
+ background-size: cover;
+ margin: 5px 0px 0px 0px;
+ padding: 10px;
+ height: 520px;
+ width: 1250px;
+}
+
+#content2{ 
+ float: left;
+ color: #333;
+ background-image: url("Digimon Wallpaper2.gif");
+	background-size: cover;
+ margin: 5px 0px 0px 0px;
+ padding: 10px;
+ height: 520px;
+ width: 1250px;
+}
+#content3{ 
+ float: left;
+ color: #333;
+ background-image: url("digimon-world-wallpapers.png");
+	background-size: cover;
+ margin: 5px 0px 0px 0px;
+ padding: 10px;
+ height: 520px;
+ width: 1250px;
+}
+
+#content4{ 
+ float: left;
+ color: #333;
+	background-image: url("Digimon Wallpaper3.webp");
+	background-size: cover;
+ margin: 5px 0px 0px 0px;
+ padding: 10px;
+  height: 520px;
+ width: 1260px;
+}
+
+#content5{
+float: left;
+ color: #333;
+	background-image: url("wallpaper.jpg");
+	background-size: cover;
+ margin: 0px 0px 0px 0px;
+ padding: 10px;
+  height: 100%;
+ width: 1260px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	background-color:#000000;
+}
+
+li a:hover {
+background-color:#5A5A5A;
+  color: #00DBFF;
+}
+
+h1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	
+
+}
+
+h1 a:hover {
+  color: #00DBFF;
+	
+}
+
+	@font-face {
+    font-family: Digimon;
+    src: url("Pixel Digivolve.otf") format("opentype");
+} 
+

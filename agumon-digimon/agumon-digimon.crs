@@ -1,0 +1,42 @@
+﻿[Hand]
+Path=Agumon-link select 2.ani
+
+[Arrow]
+Path=Agumon-normal.cur
+
+[Wait]
+Path=Agumon-busy.ani
+
+[SizeNWSE]
+Path=Agumon-diagonal resize 1.ani
+
+[SizeNESW]
+Path=Agumon-diagonal resize 2.ani
+
+[NWPen]
+Path=Agumon-handwriting.cur
+
+[Help]
+Path=Agumon-help.ani
+
+[SizeWE]
+Path=Agumon-horizontal.ani
+
+[SizeAll]
+Path=Agumon-move.ani
+
+[Crosshair]
+Path=Agumon-precision.cur
+
+[IBeam]
+Path=Agumon-text.cur
+
+[No]
+Path=Agumon-unavailable.cur
+
+[SizeNS]
+Path=Agumon-Vertical.ani
+
+[AppStarting]
+Path=Agumon-working.ani
+

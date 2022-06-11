@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>	
+
+<title>Create Your Own Digimon</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Style.css" rel="stylesheet" type="text/css">
+<script>
+
+	
+	function validateForm() {
+if (document.DigimonForm.fname.value=='')
+	{
+	alert('Input your Digimon Name');
+	document.DigimonForm.fname.focus();
+	return false;  
+	}
+
+	if((document.DigimonForm.attribute[0].checked == false) && 		(document.DigimonForm.attribute[1].checked == false) && 		(document.DigimonForm.attribute[2].checked == false))
+	{
+	alert('What your Digimon Attribute?');
+	return false;  
+  	}
+
+	if(document.DigimonForm.element.value == "None"){
+		alert('What your Digimon Element?');
+	return false;  
+  	}
+	
+
+	
+	if((document.DigimonForm.Type[0].checked==false) && (document.DigimonForm.Type[1].checked==false) &&
+	(document.DigimonForm.Type[2].checked==false) &&       (document.DigimonForm.Type[3].checked==false)){
+         alert("Please choose your Type!");
+	return false;  
+       }
+}
+	
+	
+	
+
+</script>
+	</head>
+
+<body>
+	
+<marquee direction="right" width="1260">
+	<img src="Images/digimon-agumon.gif" width="50" alt=""/>
+	<h1 style="display: inline">Digital Monster : Digimon</h1>
+	<img src="Images/digimon-agumon.gif" width="50" alt=""/>
+</marquee>
+<div class="content-4">
+<h1 style="text-align: center;">CREATE YOUR OWN DIGIMON <br><br></h1>
+<!--<form name="form 1" method="post" action="https://padlet.com/asrlazeem23/zeemax_" onsubmit="return validateForm()">-->
+	
+	
+	
+	
+	
+	<form name="DigimonForm" action="Digimon_save.html"  method="get"  style="text-align: center" onsubmit="return validateForm()">
+
+	Name:
+<input type="text" name="fname" > MON
+	
+  <p><br>ATTRIBUTE:
+<input type="radio" name="attribute" value="Vaccine"> Vaccine
+<input type="radio" name="attribute" value="Virus"> Virus
+<input type="radio" name="attribute" value="Data"> Data
+  </p>
+	
+	
+<p><br>Element:
+<select name="element">
+	<option value="None">Select Element</option>
+	<option value="Fire">Fire</option>
+	<option value="Water">Water</option>
+	<option value="Air">Air</option>
+	<option value="Earth">Earth</option> 
+</select>
+	</p>
+	
+  <br>Type : <br>
+	    <input type="checkbox" name="Type" value="Reptile">
+	    Reptile<br>
+	    <input type="checkbox" name="Type" value="Beast">
+	    Beast<br>
+	    <input type="checkbox" name="Type" value="Insect">
+	    Insect<br>
+	    <input type="checkbox" name="Type" value="Plant">
+	    Plant<br>
+  
+<input type="submit" name="submit" value="SUBMIT" > <input type="reset">
+</form>
+</div>
+</body>
+</html>

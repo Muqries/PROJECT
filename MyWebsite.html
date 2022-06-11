@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<title>Welcome to Digital World</title>
+
+
+<head>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<!--Navigation-->
+<div id="navigation">
+<ul>
+  <li><a href="MyWebsite.html" style="color:#00DBFF" title="HOME">HOME</a></li>
+  <li><a href="What Is Digimon.html" title="WHAT IS DIGIMON">WHAT IS DIGIMON</a></li>
+  <li><a href="Animes and Games.html" title="ANIMES/GAMES">ANIMES AND GAMES</a></li>
+	<li><a href="#CreateDigimon">CREATE DIGIMON</a></li>
+	<li><a href="#Quiz">QUIZ</a></li>
+</ul> 
+<script>
+
+function display_ct5() {
+var x = new Date()
+var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+
+var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ":" + ampm;
+document.getElementById('ct5').innerHTML = x1;
+display_c5();
+ }
+ function display_c5(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct5()',refresh)
+}
+display_c5()
+</script>
+	
+<span id="ct5" style="color:#00DBFF ; background-color: #000000; float: right "></span>
+	</div>
+	
+<!--Content-->
+
+<div id="content"><h1 style="color:#FFFFFF;font-family: Digimon ;font-size: 100px; text-align: center;background-color:hsla(0,0%,0%,0.74);"><p style="font-size:20px">DIGIMON PORTAL SITE</p><a href="#Website">WELCOME TO DIGTAL WORLD</a><p style="font-size:20px">CREATE BY MUQRIES</p></h1>
+<br><br>
+<p  style="text-align:center" ><a href="What Is Digimon.html" title="WHAT IS DIGIMON" ><img src="Button1.png" width="200" alt="WhatIsDigimon" /></a></p>
+</div>
+
+<!--Content 2-->
+<div id="content2"><center></center><h1><br><br>ANIMES AND GAMES</h1>
+<br>
+	<br>
+<p style="text-align:center; background-color:hsla(0,0%,0%,0.74);"><br><br><img src="digimon-ghost-game-2021-anime.jpg.png" width="35%" alt=""/> <img src="Digimon Survive Final.png" width="35%" alt="DigimonGhostGame"/></p>
+<p style="text-align:center; background-color:hsla(0,0%,0%,0.74);"><br></p>
+<br>
+<p style="text-align:center"><a href="Animes and Games.html" title="ANIMES/GAMES"><img src="Button-2.png" width="200" alt="Animes and Games" /></a></p>
+	</div>	
+
+<!--CONTENT 3-->
+	
+<div id="content3"><br><br><br><br><br><br><br><h1 style="text-align: center; color:white; background-color:hsla(0,0%,0%,0.56);">MORE<br><br><p style="text-align:center"><img src="Button-3.png" width="200" alt="CreateDigimon" /></p><p style="text-align:center"><br><img src="Button-4.png" width="200" alt="Quiz" /></p><br></h1>	
+	</div>	
+</body>
+</html>

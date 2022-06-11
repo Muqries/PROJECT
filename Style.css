@@ -1,0 +1,250 @@
+@font-face {
+    font-family: Digimon;
+    src: url("Font/Pixel Digivolve.otf") format("opentype");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Digimon;
+		
+}
+/*NAVIGATION*/
+
+nav{
+	background:rgba(87,87,87,1.00);
+	height: 80px;
+	width: 100%;
+	border-bottom-style:inset;
+	border-bottom-color: #ec5505;
+}
+
+/*CONTENT*/
+
+.content { 
+	float: left;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	background-image: url("Images/Wallpaper-1.jpg");
+	background-size: cover;
+	height: 534px;
+	width: 100%;
+	
+}
+
+.content-2 { 
+	color: white;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-image: url("Images/Wallpaper-4.svg");
+	background-size:cover;
+	height: 614px;
+	width: 100%;
+}
+
+.content-3 { 
+	color: white;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-image: url("Images/background-4.jpg");
+	background-size:cover;
+	height: 614px;
+	width: 100%;
+}
+
+.content-4 { 
+	color: white;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-image: url("Images/background-4.jpg");
+	background-size:cover;
+	height: 614px;
+	width: 100%;
+}
+
+
+/*RANDOM STUFF*/
+
+img.Logo{
+	padding: 10px;
+}
+
+nav ul{
+	 float: right;
+	margin-right: 10px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px 0 5px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	transition: color 0.15s, text-shadow 0.15s;
+	
+	
+}
+
+a:hover{
+	color: #2bbbec;
+	text-shadow: 0px 7px 10px rgba(0,0,0,0.7);
+	
+}
+
+
+.Homepage-1 {
+	color:#2bbbec;
+	font-size: 30px; 
+	text-align: center;
+	background-color:hsla(0,0%,0%,0.74);
+	margin:0 30px;
+		
+	
+}
+
+.Homepage-2 {
+	color:#FFFFFF;
+	font-size: 80px; 
+	text-align: center;
+	background-color:hsla(0,0%,0%,0.74);
+	transition: color 0.15s, text-shadow 0.15s; 
+}
+
+.Homepage-2:hover {
+	color: #2bbbec;
+	text-shadow: 0px 7px 10px rgba(0,0,0,0.7);		
+}
+
+.button-1{
+	font-family: Digimon;
+	background-color: rgba(119,117,255,1.00);
+	color: #000000;
+	font-size: 15px;
+	border-color:#ec5505; 
+	padding: 10px 0;
+	width: 150px;
+	border-radius: 30px ;
+	transition: font-size 0.25s, width 0.25s;
+	
+	
+}
+
+.Anime-Game{
+	background-color: rgba(0,0,0,1.00);
+	margin: 30px;
+	padding: 50px 0;
+	border-style: inset;
+	border-color: #ec5505;
+	border-radius: 10px;
+	color: #2bbbec;
+}
+
+.button-1:hover{
+	border-radius: 30px ;
+	width: 200px;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+
+.button-1:active{
+	box-shadow: 0px 5px 10px #ec5505;
+	opacity: 0.5;
+	
+}
+
+@keyframes changeContent {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: url("Images/GhostGame Logo.png");
+  }
+}
+
+.ghostgame{
+	display:inline;
+	cursor: pointer;
+}
+
+.ghostgame:before{
+	content: url("Images/digimon-ghost-game-2021-anime.png");
+	transition: all 1s linear;
+    animation-direction: reverse;
+	zoom:40%;	
+}
+
+
+.ghostgame:hover:before{
+	animation-fill-mode: forwards;
+    animation: changeContent 0.5s linear forwards;
+}
+
+
+@keyframes changeContent2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    content: url("Images/Digimon Survive Logo.png");
+  }
+}
+
+
+
+.survive{
+	display:inline;
+		cursor: pointer;
+
+}
+
+.survive:before{
+	content: url("Images/Digimon Survive Final.png");
+	transition: all 1s linear;
+    animation-direction: reverse;
+	zoom:40%;	
+}
+
+.survive:hover:before{
+	animation-fill-mode: forwards;
+    animation: changeContent2 0.5s linear forwards;
+}
+
+.wrapper {
+	display:flex ;
+}
+
+
+.wrapper .left, .right{
+	width: 50%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.55);
+	
+}
+
+.wrapper .left{
+	padding-top: 20%;
+}
+
+
